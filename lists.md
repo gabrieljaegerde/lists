@@ -70,6 +70,23 @@ for name in names:
     print(name)
 ```
 
+## Slicing Lists
+
+Slicing is a feature that enables accessing parts of sequences like lists. It is done by defining the start and end index, and optionally a step. The notation for slicing lists is as follows:
+
+- `my_list[start:end]`: This retrieves a sublist from `my_list` starting from the `start` index (inclusive) up to, but not including, the `end` index.
+- `my_list[start:]`: This retrieves a sublist from `my_list` starting from the `start` index (inclusive) to the end of the list.
+- `my_list[:end]`: This retrieves a sublist from `my_list` from the beginning of the list up to, but not including, the `end` index.
+- `my_list[:]`: This retrieves a copy of the entire list.
+- `my_list[start:end:step]`: This retrieves a sublist from `my_list` with a specified step. It starts from the `start` index (inclusive) and goes up to, but not including, the `end` index, taking elements at intervals of `step`.
+
+Here are some examples:
+
+```python
+sublist = my_list[1:3]  # Get elements from index 1 to 3 (exclusive)
+reverse = my_list[::-1]  # Reverse the list
+```
+
 ## List Comprehensions
 
 List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operation applied to each member of another sequence.
